@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ object.name }}</h1>
+    <section class="">
+        {{ object.memo|linebreaksbr }}
+
+        <p>
+            <a href="{% url 'monitor:download' object.pk %}" class="">データのダウンロード</a>
+        </p>
+        <p>
+            <a href="{% url 'monitor:streaming' object.pk %}" class="">データのダウンロード（ストリーミング）</a>
+        </p>
+    </section>
+
+    <img src='{% url 'monitor:plot' object.pk %}' width=1200 height=800>
+
+    <section>
+        <p><a href="javascript:history.back()">&lt; Back</a></p>
+    </section>
+{% endblock %}
