@@ -11,7 +11,7 @@ Requirement
 
 :Python: 3.7.0
 :cycler: 0.10.0
-:Django: 2.2.2
+:Django: 2.2.3
 :kiwisolver: 1.1.0
 :matplotlib: 3.1.0
 :numpy: 1.16.4
